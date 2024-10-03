@@ -58,8 +58,8 @@ body {
 }
 
 .main img {
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    /* height: 400px; */
 }
 
 .main h1 {
@@ -243,3 +243,58 @@ body {
     margin-top: 11px;
     font-size: 22px;
 }
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main img {
+    width: 400px;
+    /* height: 400px; */
+}
+
+/* Media Query for screens 1100px or smaller */
+@media screen and (max-width: 1100px) {
+    .main {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Center text content */
+        /* background-color: red; */
+    }
+
+    .main img {
+        margin: 20px auto; /* Center the image horizontally */
+        width: 550px; /* Resize the image for smaller screens */
+    }
+
+    .mainText p {
+padding: 0 80px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
