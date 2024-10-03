@@ -40,3 +40,10 @@ function downloadBtn() {
         alert("thanks for contact")
     }
 })
+
+function downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'your-cv.pdf'; // If it's a ZIP file
+    link.download = 'ParvezAhmed-CV.pdf'; // Name for the downloaded file
+    link.click();
+}

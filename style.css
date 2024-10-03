@@ -39,6 +39,15 @@ body {
 
 }
 
+/* #navbar div ul li button {
+    text-decoration: none;
+    padding: 5px;
+    background-color:transparent;
+    color: white;
+    border: none;
+
+} */
+
 #navbar div ul li {
     list-style: none;
 }
@@ -95,9 +104,13 @@ body {
     padding-top: 70px;
 
 }
+.head h1{
+    margin-top: 80px;
+}
 
 .about {
     display: flex;
+    margin-top: 10px;
     justify-content: center;
     gap: 22px;
 }
