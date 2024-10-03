@@ -40,10 +40,13 @@ function downloadBtn() {
         alert("thanks for contact")
     }
 })
+function openAndDownloadCV() {
+    const cvUrl = 'your-cv.pdf'; // Update with your correct CV file path
+    window.open(cvUrl, '_blank');
 
-function downloadCV() {
+    // Trigger the download
     const link = document.createElement('a');
-    link.href = 'your-cv.pdf'; // If it's a ZIP file
-    link.download = 'ParvezAhmed-CV.pdf'; // Name for the downloaded file
+    link.href = cvUrl;
+    link.download = 'ParvezAhmed-CV.pdf'; // Set the file name for download
     link.click();
 }
