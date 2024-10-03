@@ -263,7 +263,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center; /* Center text content */
-        background-color: red;
+        background-color: rgb(72, 0, 255);
         width: 550px;
     }
 
