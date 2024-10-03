@@ -256,14 +256,15 @@ body {
 }
 
 /* Media Query for screens 1100px or smaller */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 500px) {
     .main {
         display: flex;
         flex-direction: column; /* Stack items vertically */
         justify-content: center;
         align-items: center;
         text-align: center; /* Center text content */
-        /* background-color: red; */
+        background-color: red;
+        width: 550px;
     }
 
     .main img {
