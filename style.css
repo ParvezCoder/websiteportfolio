@@ -246,7 +246,7 @@ body {
 .main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 50px;
 }
 
@@ -256,20 +256,20 @@ body {
 }
 
 /* Media Query for screens 1100px or smaller */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .main {
         display: flex;
         flex-direction: column; /* Stack items vertically */
         justify-content: center;
         align-items: center;
         text-align: center; /* Center text content */
-        background-color: rgb(72, 0, 255);
-        width: 550px;
+        background-color: rgb(255, 0, 25);
+        width: 600px;
     }
 
     .main img {
         margin: 20px auto; /* Center the image horizontally */
-        width: 550px; /* Resize the image for smaller screens */
+        width: 600px; /* Resize the image for smaller screens */
     }
 
     .mainText p {
