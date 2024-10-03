@@ -288,4 +288,28 @@ body {
     .mainText p {
         padding: 0 80px
     }
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* Center text content */
+        background-color: rgb(255, 0, 25);
+        width: 620px;
+    }
+
+    .about img {
+        margin: 20px auto;
+        /* Center the image horizontally */
+        width: 400px;
+        /* Resize the image for smaller screens */
+    }
+    .about p{
+        padding: 0 80px;
+    }
+
 }
