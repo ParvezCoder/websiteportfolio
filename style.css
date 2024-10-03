@@ -305,11 +305,31 @@ body {
     .about img {
         margin: 20px auto;
         /* Center the image horizontally */
-        width: 400px;
+        width: 380px;
         /* Resize the image for smaller screens */
     }
     .about p{
         padding: 0 80px;
     }
-
+    .serviceCard {
+        width: 600px;
+        padding: 5px;
+        margin-top: 20px;
+        text-align: center;
+        /* background-color: rgb(121, 16, 16); */
+        color: white;
+    }
+    .contact {
+        width: 600px;
+        margin: auto;
+        background-color: rgb(209, 48, 48);
+        text-align: center;
+        padding: 2px;
+    }
+    .workCard img {
+        width: 620px;
+        border-radius: 5px;
+        margin-inline: 20px;
+    }
+      
 }
