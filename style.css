@@ -257,13 +257,18 @@ body {
 
 /* Media Query for screens 1100px or smaller */
 @media screen and (max-width: 600px) {
+    #navbar {
+        width: 600px
+    }
+    
+
     .main {
         display: flex;
         flex-direction: column; /* Stack items vertically */
         justify-content: center;
         align-items: center;
         text-align: center; /* Center text content */
-        background-color: rgb(255, 0, 25);
+        /* background-color: rgb(255, 0, 25); */
         width: 600px;
     }
 
