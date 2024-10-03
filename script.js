@@ -41,12 +41,8 @@ function downloadBtn() {
     }
 })
 function openAndDownloadCV() {
-    const cvUrl = 'your-cv.pdf'; // Update with your correct CV file path
-    window.open(cvUrl, '_blank');
-
-    // Trigger the download
     const link = document.createElement('a');
-    link.href = cvUrl;
+    link.href = 'your-cv.pdf';;
     link.download = 'ParvezAhmed-CV.pdf'; // Set the file name for download
     link.click();
 }
