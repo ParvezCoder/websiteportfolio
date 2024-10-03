@@ -14,7 +14,7 @@ body {
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(2, 2, 66);
+    background-color: rgb(4, 4, 107);
     height: 45px;
     align-items: center;
     position: sticky;
@@ -57,9 +57,10 @@ body {
 
 }
 
-.main img {
-    width: 400px;
-    /* height: 400px; */
+.main img { width: 330px;
+    height: 350px;
+    border-radius: 50%;
+    border: 6px solid aqua;
 }
 
 .main h1 {
@@ -101,10 +102,10 @@ body {
 }
 
 .about img {
-    width: 330px;
-    height: 310px;
+    width: 400px;
+    /* height: 310px;
     border-radius: 50%;
-    border: 6px solid aqua;
+    border: 6px solid aqua; */
 }
 
 .about .aboutText p {
@@ -281,9 +282,9 @@ body {
     .main img {
         margin: 20px auto;
         /* Center the image horizontally */
-        width: 620px;
+        width: 380px;
         /* Resize the image for smaller screens */
-    }
+}
 
     .mainText p {
         padding: 0 80px
@@ -307,6 +308,12 @@ body {
         /* Center the image horizontally */
         width: 380px;
         /* Resize the image for smaller screens */
+
+        margin: 20px auto;
+        /* Center the image horizontally */
+        width: 620px;
+        /* Resize the image for smaller screens */
+    
     }
     .about p{
         padding: 0 80px;
@@ -322,9 +329,8 @@ body {
     .contact {
         width: 600px;
         margin: auto;
-        background-color: rgb(209, 48, 48);
         text-align: center;
-        padding: 2px;
+        padding: 22px;
     }
     .workCard img {
         width: 620px;
