@@ -46,3 +46,19 @@ function openAndDownloadCV() {
     link.download = 'ParvezAhmed-CV.pdf'; // Set the file name for download
     link.click();
 }
+    // Get the menu icon and the ul (menu list)
+    const menuIcon = document.getElementById('menu-icon');
+    const menu = document.getElementById('ull');
+    const navLinks = document.querySelectorAll('#ull li a'); // Get all nav links
+
+    // Add click event listener to the menu icon for toggling the menu
+    menuIcon.addEventListener('click', function() {
+        menu.classList.toggle('show'); // Toggle the "show" class on the menu
+    });
+
+    // Add click event listener to each navigation link to hide the menu when clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menu.classList.remove('show'); // Hide the menu after clicking a link
+        });
+    });
