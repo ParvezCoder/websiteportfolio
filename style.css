@@ -243,6 +243,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 22px;
+    /* display: none; */
 }
 
 /* Image Styling */
@@ -298,6 +299,7 @@ body {
         flex-direction: column-reverse;
         align-items: center;
         gap: 15px;
+        display: none;
     }
 
     .about img {
