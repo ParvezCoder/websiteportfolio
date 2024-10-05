@@ -618,15 +618,15 @@ body {
     gap: 20px;
 }
 
-.footer .icons i {
+.footer .icons  i {
     cursor: pointer;
     transition: color 0.3s ease;
+color: white;
 }
 
 .footer .icons i:hover {
     color: aqua;
 }
-
 .text {
     margin-top: 20px;
 }
