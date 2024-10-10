@@ -11,7 +11,7 @@ async function sendEmail() {
     };
 
     try {
-        let response = await email.send('service_xvky2xu', 'template_j9wxblb', templateParams);
+        let response = await emailjs.send('service_xvky2xu', 'template_j9wxblb', templateParams, "C4b5-1sg2WE1pHNb2");
         alert('Message sent successfully!');
     } catch (error) {
         alert('Failed to send the message. Please try again.');
