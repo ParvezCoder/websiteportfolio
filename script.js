@@ -10,7 +10,7 @@ function sendEmail() {
         to_email: 'parvezcoder786@gmail.com' // Your email
     };
 
-    emailjs.send('service_xvky2xu', 'template_j9wxblb', templateParams)
+    emailjs.send('service_xvky2xu', 'template_j9wxblb', templateParams, "C4b5-1sg2WE1pHNb2")
         .then(function(response) {
             alert('Message sent successfully!');
         }, function(error) {
