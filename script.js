@@ -25,21 +25,6 @@ btns.forEach(function (buttons) {
         }
     })
 })
-function downloadBtn() {
-    alert("CV download Successfully")
-}
-    let submit = document.getElementById("submit")
-    submit.addEventListener("click", function () {
-        let name = document.getElementById("name")
-    let email = document.getElementById("email")
-    let msg = document.getElementById("msg")
-    if (email.value == "" || msg.value == "" ||  name.value == "" ) {
-        alert("please fill field")
-    }
-    else{
-        alert("thanks for contact")
-    }
-})
 function openAndDownloadCV() {
     const link = document.createElement('a');
     link.href = 'your-cv.pdf';;
@@ -62,3 +47,21 @@ function openAndDownloadCV() {
             menu.classList.remove('show'); // Hide the menu after clicking a link
         });
     });
+
+
+    function downloadBtn() {
+        alert("CV download Successfully")
+    }
+        let submit = document.getElementById("submit")
+        submit.addEventListener("click", function () {
+            let name = document.getElementById("name")
+        let email = document.getElementById("email")
+        let msg = document.getElementById("msg")
+        if (email.value == "" || msg.value == "" ||  name.value == "" ) {
+            alert("please fill field")
+        }
+        else{
+            alert("thanks for contact")
+        }
+    })
+    

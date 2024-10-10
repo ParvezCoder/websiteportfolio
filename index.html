@@ -151,7 +151,7 @@
         </div>
 
 
-        <div id="contact">
+        <!-- <div id="contact">
             <div class="head">
                 <h1>Contact US</h1>
             </div>
@@ -161,8 +161,43 @@
                 <textarea name="" id="msg" cols="30" rows="5" value="" placeholder="Enter your message"></textarea>
                 <button id="submit">Submit</button>
             </div>
-        </div>
+        </div> -->
 
+
+        <div id="contact">
+            <div class="head">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact">
+                <input type="text" placeholder="Enter Your Name" id="name">
+                <input type="email" placeholder="Enter your Email" id="email">
+                <textarea id="msg" cols="30" rows="5" placeholder="Enter your message"></textarea>
+                <button id="submit" onclick="sendEmail()">Submit</button>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            function sendEmail() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('msg').value;
+        
+                var templateParams = {
+                    from_name: name,
+                    from_email: email,
+                    message: message,
+                    to_email: 'parvezcoder786@gmail.com'
+                };
+        
+                emailjs.send('service_xvky2xu', 'template_j9wxblb', templateParams)
+                    .then(function(response) {
+                        alert('Message sent successfully!');
+                    }, function(error) {
+                        alert('Failed to send the message. Please try again.');
+                    });
+            }
+        </script>
+<!-- /////////////////////////////////////////////////////////////////////////         -->
 
         <div class="footer">
             <div class="icons">
