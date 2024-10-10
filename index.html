@@ -1,29 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>parvez portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("C4b5-1sg2WE1pHNb2");  // Replace with your actual EmailJS user ID
-        })();
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <div id="contact">
-        <div class="head">
-            <h1>Contact Us</h1>
+    <div id="navbar">
+        <div>
+            <h3 id="logo">Parvez Portfolio</h3>
         </div>
-        <div class="contact">
-            <input type="text" placeholder="Enter Your Name" id="name">
-            <input type="email" placeholder="Enter your Email" id="email">
-            <textarea id="msg" cols="30" rows="5" placeholder="Enter your message"></textarea>
-            <button id="submit" onclick="sendEmail()">Submit</button>
+        <div>
+            <ul id="ull">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Project</a></li>
+                <li><a onclick="openAndDownloadCV()" target="_blank">Download CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="menu">
+            <i class="fa-solid fa-bars" id="menu-icon"></i> <!-- Added id here -->
         </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <div class="container">
+        <div class="main">
+            <!-- <div style="width: 60%;"> -->
+            <div class="mainText">
+                <h3>Hello I'm </h3>
+                <h1>Parvez Ahmed</h1>
+                <p class="para">A Front-End Developer is responsible for creating the visual and interactive elements of
+                    a WEBSITE or WEB Application. We use HTML, CSS, JavaScript, React.js and Next.js.</p>
+                <button onclick="openAndDownloadCV()">Download CV</button>
+            </div>
+            <!-- </div> -->
+            <!-- <div style="width: 40%;"> -->
+            <img src="image/Pic.png" alt="">
+            <!-- </div> -->
+        </div>
+
+
+        <div id="about">
+            <div class="head">
+                <h1>About US</h1>
+            </div>
+            <div class="about">
+                <img src="image/Pic.png" alt="">
+
+                <div class="aboutText">
+                    <h1> Parvez Ahmed</h1>
+                    <p>Fullstack Developer</p>
+                    <p>youtube: Code with parvez Ahmed</p>
+                    <p>A Front-End Developer is responsible for creating the visual and interactive elements of
+                        a WEBSITE or WEB Application. We use HTML, CSS, JavaScript, React.js and Next.js</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div id="service">
+            <div class="head">
+                <h1>Our Service</h1>
+            </div>
+            <div class="btns">
+                <button class="btn" id="all">All</button>
+                <button class="btn" id="ui">UI/Ux Design</button>
+                <button class="btn" id="web">Web Development</button>
+                <button class="btn" id="mobile">Andriod Developmet</button>
+            </div>
+            <div class="service">
+                <div class="serviceCard" id="uiDesign">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/ Ux Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, voluptate recusandae! Quidem sunt
+                        nemo illo molestias, vero ullam quaerat soluta, illum et obcaecati odio eum commodi repellendus
+                        magni cum similique!</p>
+                    <button>Contact</button>
+                </div>
+                <div class="serviceCard" id="webDesign">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, voluptate recusandae! Quidem sunt
+                        nemo illo molestias, vero ullam quaerat soluta, illum et obcaecati odio eum commodi repellendus
+                        magni cum similique!</p>
+                    <button>Contact</button>
+                </div>
+
+                <div class="serviceCard" id="android">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>Android Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, voluptate recusandae! Quidem sunt
+                        nemo illo molestias, vero ullam quaerat soluta, illum et obcaecati odio eum commodi repellendus
+                        magni cum similique!</p>
+                    <button>Contact</button>
+                </div>
+
+            </div>
+            <div id="work">
+                <div class="head">
+                    <h1>My Work</h1>
+                </div>
+                <div class="work">
+                    <div class="workCard">
+                        <!-- <div style="height: 400px; width: 550px;"> -->
+                        <img src="image/news.jpg" alt="news">
+                        <!-- </div> -->
+                        <h3>News Website</h3>
+                        <p>News Website using APi And HTML css and javascript</p>
+                        <a href="">Checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <!-- <div style="height: 400px; width: 550px;"> -->
+                        <img src="image/ecommerce.jpg" alt="news">
+                        <!-- </div> -->
+                        <h3>E-Commerce Website</h3>
+                        <p>E-Commerce Website using And HTML css and javascript</p>
+                        <a href="">Checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <!-- <div style="height: 400px; width: 550px;"> -->
+                        <img src="image/food.jpg" alt="news">
+                        <!-- </div> -->
+                        <h3>Food Website</h3>
+                        <p>Food Website using And HTML css and javascript</p>
+                        <a href="">Checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <!-- <div style="height: 400px; width: 550px;"> -->
+                        <img src="image/responsive.jpg" alt="news">
+                        <!-- </div> -->
+                        <h3>Responsive Website</h3>
+                        <p>News Website using And HTML css and javascript</p>
+                        <a href="">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div id="contact">
+            <div class="head">
+                <h1>Contact US</h1>
+            </div>
+            <div class="contact">
+                <input type="text" placeholder="Enter Your Name" id="name">
+                <input type="text" placeholder="Enter your Email" id="email">
+                <textarea name="" id="msg" cols="30" rows="5" value="" placeholder="Enter your message"></textarea>
+                <button id="submit">Submit</button>
+            </div>
+        </div> -->
+
+
+        <div id="contact">
+            <div class="head">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact">
+                <input type="text" placeholder="Enter Your Name" id="name">
+                <input type="email" placeholder="Enter your Email" id="email">
+                <textarea id="msg" cols="30" rows="5" placeholder="Enter your message"></textarea>
+                <button id="submit" onclick="sendEmail()">Submit</button>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            function sendEmail() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('msg').value;
+        
+                var templateParams = {
+                    from_name: name,
+                    from_email: email,
+                    message: message,
+                    to_email: 'parvezcoder786@gmail.com'
+                };
+        
+                emailjs.send('service_xvky2xu', 'template_j9wxblb', templateParams)
+                    .then(function(response) {
+                        alert('Message sent successfully!');
+                    }, function(error) {
+                        alert('Failed to send the message. Please try again.');
+                    });
+            }
+        </script>
+<!-- /////////////////////////////////////////////////////////////////////////         -->
+
+        <div class="footer">
+            <div class="icons">
+                <a href="https://wa.me/923052887779" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/parvez-ahmed-1604b92b5/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/ParvezCoder" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                <a href="https://www.facebook.com/enginer.bhutto?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+
+            </div>
+            <div class="text">
+                <p>Privacy Policy</p>
+                <p>Terms and condition</p>
+                <p>Disclaimer</p>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
+
 </html>
